@@ -1,0 +1,42 @@
+@import "bourbon";
+
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../fonts/OpenSansCondensedBold.eot');
+	src: url('../fonts/OpenSansCondensedBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenSansCondensedBold.woff') format('woff'),
+		url('../fonts/OpenSansCondensedBold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../fonts/OpenSansCondensedLight.eot');
+	src: url('../fonts/OpenSansCondensedLight.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenSansCondensedLight.woff') format('woff'),
+		url('../fonts/OpenSansCondensedLight.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../fonts/OpenSansCondensedLightItalic.eot');
+	src: url('../fonts/OpenSansCondensedLightItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenSansCondensedLightItalic.woff') format('woff'),
+		url('../fonts/OpenSansCondensedLightItalic.ttf') format('truetype');
+	font-weight: lighter;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'RobotoSlab';
+	src: url('../fonts/RobotoSlabBold.eot');
+	src: url('../fonts/RobotoSlabBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/RobotoSlabBold.woff') format('woff'),
+		url('../fonts/RobotoSlabBold.ttf') format('truetype');
+	font-weight: lighter;
+	font-style: italic;
+}

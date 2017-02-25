@@ -1,0 +1,108 @@
+@import "bourbon";
+@import "components/vars.scss";
+@import "components/normalize.scss";
+@import "components/fonts.scss";
+
+*::-webkit-input-placeholder {
+	color: #ccc;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #ccc;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #ccc;
+	opacity: 1;
+}
+
+*:-ms-input-placeholder {
+	color: #ccc;
+	opacity: 1;
+}
+
+*, 
+*:before, 
+*:after{
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.5;
+	font-family: 'OpenSans', sans-serif;
+	color: #111;
+	background-color: #fff;
+}
+.container {
+	max-width: 1170px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.hidden {
+	display: none;
+}
+a {
+	outline: none !important;
+}
+.button {
+	font-weight: 600;
+	a, button {
+		@include btn;
+		display: inline-block;
+		vertical-align: top;
+		padding: 8px 35px 13px 35px;
+		line-height: 1;
+		font-size: 30px;
+		background-color: $accent-color;
+		color: #fff;
+		text-decoration: none;
+		border-radius: 5px;
+		transition: all .5s ease;
+		&:hover, &:active, &:focus {
+			background-color: darken($accent-color, 10%);
+		}
+	}
+}
+.button_transparent {
+	a, button {
+		background-color: transparent;
+		border: 1px solid #fff;
+		&:hover, &:active, &:focus {
+			border: 1px solid darken($accent-color, 10%);
+		}
+	}
+}
+
+//Custom Styles Here
+@import "components/header.scss";
+@import "components/promo.scss";
+@import "components/production.scss";
+@import "components/reviews.scss";
+@import "components/footer.scss";
+//Page styles
+@import "components/page.scss";
+@import "components/magnific-popup.scss";
+
+
+
+//@import "build/scss/components/magnific-popup.scss";
+
+//ALWAYS END
+@import "components/media.scss";
+
+//Load Libs SASS
+//@import "html/libs/animate/animate.sass";
+@import "html/libs/owl.carousel/dist/assets/owl.carousel.min";
+//@import "html/libs/superfish/dist/css/superfish";
+//@import "html/libs/font-awesome/scss/font-awesome.scss";
+//@import "html/libs/jQuery.mmenu/dist/css/jquery.mmenu.all";
+@import "html/libs/magnific-popup/dist/magnific-popup";

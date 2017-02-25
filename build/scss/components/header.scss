@@ -1,0 +1,195 @@
+.header {
+	
+}
+.header__wrapper {
+	@extend .container;
+}
+.header__top-line {
+	@extend .clearfix;
+	padding: 10px 0 15px 0;
+	text-align: center;
+}
+.header__logo {
+	float: left;
+	img {
+		display: inline-block;
+		vertical-align: top;
+		max-width: 100%;
+		width: auto;
+		height: auto;
+	}
+}
+
+.header__title {	
+	display: inline-block;
+	vertical-align: top;
+	max-width: 376px;
+	margin-top: -10px;
+	padding: 20px 30px;
+	background-color: $main-color;
+	text-transform: uppercase;
+	color: #fff;
+	box-shadow: 5px 5px 30px 3px transparentize(#000, .62);
+	text-align: left;
+	font-size: 30px;
+	line-height: 1.2;
+	font-weight: 600;
+}
+
+.header__phone {
+	float: right;
+}
+.header__phone-link {
+	font-size: 36px;
+	font-weight: 600;
+	line-height: 1;
+	font-family: 'RobotoSlab';
+	a {
+		position: relative;
+		display: block;
+		padding: 0 0 0 40px;
+		text-decoration: none;
+		color: $main-color;
+		transition: all .5s ease;
+		&:hover, &:active, &:focus {
+			color: $accent-color;
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			top: 5px;
+			left: 0;
+			background: url(../img/sprites.png) no-repeat;
+			background-position: 0 0;
+			width: 32px;
+			height: 32px;
+		}
+	}
+	span {
+		font-size: 24px;	
+	}
+}
+.header__phone-button {
+	margin: 15px 0 0 0;
+	a {
+		display: block;
+	}
+}
+.header__nav {
+	background-color: lighten($main-color, 32%);
+	ul {
+		@extend .container;
+		list-style: none;
+		text-align: center;
+		display: flex;
+		justify-content: space-between;
+		li {
+			display: inline-block;
+			vertical-align: top;
+			a {
+				display: block;
+				padding: 14px 20px;
+				text-decoration: none;
+				color: #fff;
+				text-transform: uppercase;
+				font-weight: 600;
+				font-size: 18px;
+				transition: all .5s ease;
+				&:hover, &:active, &:focus {
+					color: lighten($accent-color, 5%);
+				}
+			}
+			.selected {
+				color: lighten($accent-color, 5%);
+			}
+		}
+		li:first-child {
+			a {
+				padding-left: 0;
+			}
+		}
+		li:last-child {
+			a {
+				padding-right: 0;
+			}
+		}
+	}
+}
+
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.container {
+		max-width: 992px;
+	}
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.container {
+		max-width: 768px;
+	}
+	.header__title {
+	    clear: both;
+	   	max-width: 100%;
+	   	width: 100%;
+	    margin-top: 20px;
+	    text-align: center;
+	}
+	.header__nav {
+		padding: 10px 0;
+		ul {
+			display: block;
+			text-align: center;
+			li a {
+				padding: 4px 15px;
+				font-size: 16px;
+			}
+			li:first-child {
+				a {
+					padding-left: 15px;
+				}
+			}
+			li:last-child {
+				a {
+					padding-right: 15px;
+				}
+			}
+		}
+	}
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.button {
+		a, button {
+			font-size: 22px;
+		}
+	}
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.header__logo {
+		float: none;
+		text-align: center;
+	}
+	.header__phone {
+	    float: none;
+	    margin: 20px 0 0 0;
+	}
+	.header__phone-link {
+		display: inline-block;
+		font-size: 34px;
+	}
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	/**/
+}
+
+
+

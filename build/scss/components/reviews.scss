@@ -1,0 +1,170 @@
+.reviews {
+	padding: 30px 0 40px 0;
+}
+.reviews__wrapper {
+	@extend .container;
+}
+.reviews__title {
+	color: $main-color;
+	h3 {
+		margin: 0;
+		font-size: 30px;
+		line-height: 1;
+	}
+}
+.reviews__box {
+	margin: 35px 0 0 0;
+}
+.reviews__slider {
+	padding: 0 80px;
+	.owl-nav {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		.owl-next,
+		.owl-prev {
+			position: absolute;
+			right: 0;
+			top: 0;
+			transform: translateY(-50%);
+			background: url(../img/sprites.png) no-repeat;
+			transition: all .5s ease;
+			&:hover, &:active {
+				opacity: .6;
+			}
+		}
+		.owl-next {
+			right: 20px;
+			background-position: -4px -199px ;
+			width: 26px;
+			height: 78px;
+		}
+		.owl-prev {
+			left: 20px;
+			background-position: -2px -99px ;
+			width: 26px;
+			height: 78px;
+		}
+	}
+}
+.reviews__slider-item {
+	@extend .clearfix;
+	margin: 0 10px;
+}
+.reviews__slider-img {
+	float: left;
+	width: 38%;
+	img {
+		max-width: 100%;
+		width: auto;
+		height: auto;
+	}
+}
+.reviews__slider-title {
+	margin: 0 0 0 42%;
+	padding: 0 0 5px 0;
+	line-height: 1;
+	font-size: 24px;
+	color: $main-color;
+	font-weight: 600;
+	border-bottom: 3px solid $main-color;
+}
+.reviews__slider-text {
+	margin: 5px 0 0 42%;
+	line-height: 1.2;
+	font-size: 18px;
+	font-style: italic;
+	p {
+		margin: 0;
+	}
+}
+.map {
+	height: 400px;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.reviews__slider {
+	    padding: 0 35px;
+	}
+	.reviews__slider .owl-nav .owl-prev {
+    	left: 0;
+    }
+    .reviews__slider .owl-nav .owl-next {
+    	right: 0;
+    }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.reviews__slider-img {
+	    width: 27%;
+	}
+	.reviews__slider-title {
+    	margin: 0 0 0 31%;
+    }
+    .reviews__slider-text {
+    	margin: 5px 0 0 31%;
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 640px) {
+	.reviews__slider-img {
+	    width: 38%;
+	}
+	.reviews__slider-title {
+    	margin: 0 0 0 42%;
+    }
+    .reviews__slider-text {
+    	margin: 5px 0 0 42%;
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.reviews__title {
+		text-align: center;
+	}
+	.reviews__slider-img {
+	   float: none;
+	   width: auto;
+	   max-width: 180px;
+	   margin: 0 auto;
+	}
+	.reviews__slider-title {
+		max-width: 340px;
+    	margin: 20px auto 0 auto;
+    	text-align: center;
+    }
+    .reviews__slider-text {
+    	max-width: 340px;
+    	margin: 5px auto 0 auto;
+    	text-align: center;
+    }
+    .reviews__slider {
+	    padding: 0;
+	}
+	.reviews__slider-item {
+	    margin: 0;
+	}
+    .reviews__slider .owl-nav {
+	    position: static;
+	    margin: 20px 0 0 0;
+	    text-align: center;
+	}
+	.reviews__slider .owl-nav .owl-next,
+	.reviews__slider .owl-nav .owl-prev {
+    	position: static;
+    	transform: none;
+    	display: inline-block;
+    	vertical-align: top;
+    	margin: 0 20px;
+    }
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	/**/
+}

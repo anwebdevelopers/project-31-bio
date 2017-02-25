@@ -1,0 +1,28 @@
+.icon-phone-gray, .icon-phone-white, .icon-arrow-left, .icon-arrow-rightt{
+	background: url(sprites.png) no-repeat;
+}
+
+.icon-phone-gray{
+	background-position: 0 0;
+	width: 32px;
+	height: 32px;
+}
+
+.icon-phone-white{
+	background-position: 0 -49px ;
+	width: 32px;
+	height: 32px;
+}
+
+.icon-arrow-left{
+	background-position: -2px -99px ;
+	width: 26px;
+	height: 78px;
+}
+
+.icon-arrow-rightt{
+	background-position: -4px -199px ;
+	width: 26px;
+	height: 78px;
+}
+

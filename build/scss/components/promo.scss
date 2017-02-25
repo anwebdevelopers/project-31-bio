@@ -1,0 +1,142 @@
+.promo {
+	padding: 50px 0 0 0;
+	background-color: #dedee7;
+}
+.promo__wrapper {
+	@extend .container;
+}
+.promo__title {
+	float: left;
+	width: 71%;
+	text-transform: uppercase;
+	font-family: 'RobotoSlab';
+	color: $main-color;
+	h1, h2 {
+		margin: 0;
+		font-size: 42px;
+		line-height: 1;
+	}
+}
+.promo__picture-right {
+	float: right;
+	width: 26%;
+	margin-top: -20px;
+	img {
+		max-width: 100%;
+		width: auto;
+		height: auto;
+	}
+}
+.promo__undertitle {
+	display: inline-block;
+	vertical-align: top;
+	width: 28%;
+	margin: 55px 4% 0 5%;
+	font-family: 'RobotoSlab';
+	color: lighten($main-color, 5%);
+	h3 {
+		margin: 0;
+		font-size: 36px;
+		line-height: 1.2;
+	}
+}
+.promo__picture-left {
+	float: left;
+	margin: 80px 0 0 0;
+	width: 37%;
+	img {
+		max-width: 100%;
+		width: auto;
+		height: auto;
+	}
+}
+.promo__button {
+	margin: 35px 0 0 0;
+	padding: 40px 0 45px 0;
+	background-color: $accent-color;
+	text-align: center;
+	a {
+		max-width: 280px;
+		width: 100%;
+	}
+}
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.promo__title {
+	    width: 60%;
+	}
+	.promo__picture-right {
+	    width: 32%;
+	}
+	.promo__picture-left {
+	    margin: 40px 0 0;
+	    width: 45%;
+	}
+	.promo__undertitle {
+		clear: both;
+	    display: block;
+	    width: auto;
+	    margin: 0;
+	    padding: 30px 0 0 0;
+	    text-align: center;
+	}
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.promo__title {
+		float: none;
+		width: auto;
+		text-align: center;
+	}
+	.promo__picture-right {
+	    margin-top: 20px;
+	}
+	.promo__picture-left {
+	    width: 60%;
+	}
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.promo__title {
+		h1, h2 {
+		    font-size: 30px;
+		}
+	}
+	.promo__picture-left {
+		float: none;
+		width: auto;
+		text-align: center;
+		img {
+			max-width: 80%;
+		}
+	}
+	.promo__picture-right {
+		float: none;
+		width: auto;
+		margin: 40px 0 0 0;
+		text-align: center;
+		img {
+			max-width: 60%;
+		}
+	}
+	.promo__undertitle {
+		h3 {
+			font-size: 28px;
+		}
+	}
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	/**/
+}
